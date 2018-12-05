@@ -2,15 +2,17 @@
     position:absolute;
     transform-origin: 50% 0; 
     width: 5px;
-    border-radius: 2.5px;
+    border-radius: 4px;
     background:black;
     top: 50%;
     left: 50%;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-#zh{height:35%;
-    background: #077; 
+#zh{height:30%;
+    background: #077;
+    width:10px; 
 }
 #zm{height:45%;
     background: #710;    
@@ -20,7 +22,10 @@
 }
 
 #cbody{
-    position:relative;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+    position:absolute;
     width: 500px;
     height:500px;
     border-radius: 50%;
