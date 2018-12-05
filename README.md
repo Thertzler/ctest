@@ -1,2 +1,2 @@
 # ctest
-a little test for things
+This repository is honestly not doing much at the moment
