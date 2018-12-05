@@ -2,6 +2,8 @@ var handH = document.getElementById("zh");
 var handM = document.getElementById("zm");
 var handS = document.getElementById("zs");
 
+var pfix = "translateX(-50%)"
+
 function setRot(_fraction, _modus){
     if(_fraction === 0){return 0}
     var sTime = new Date;
@@ -21,9 +23,9 @@ function setRot(_fraction, _modus){
 }
 
 function clockUpdate(){
-    handS.style.transform="rotate("+ setRot(60,0) +"deg)";
-    handM.style.transform="rotate("+ setRot(60,1) +"deg)";
-    handH.style.transform="rotate("+ setRot(12,2) +"deg)";
+    handS.style.transform=pfix+" rotate("+ setRot(60,0) +"deg)";
+    handM.style.transform=pfix+" rotate("+ setRot(60,1) +"deg)";
+    handH.style.transform=pfix+" rotate("+ setRot(12,2) +"deg)";
 }
 
 setInterval(clockUpdate,1000)
