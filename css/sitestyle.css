@@ -1,29 +1,30 @@
 .zeig{
     position:absolute;
-    transform-origin: 50% 0; 
+    transform-origin: 50% 0;
     border-radius: 4px;
-    background:#333;
+    border-color:#333;
     top: 50%;
     left: 50%;
     transform: translateX(-50%), rotate(180deg), ;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    border-style: solid;
 }
 
 #zh{
     height:30%;
-    background: #00f;
-    width:10px; 
+    border-color: #00f;
+    border-width: 5px;
 }
 
 #zm{
     height:45%;
-    background: #710;
-    width: 7px;
+    border-color: #710;
+    border-width: 7px;
 }
 
 #zs{
     height:40%;
-    width:3px;
+    border-width:3px;
 }
 
 #cbody{
