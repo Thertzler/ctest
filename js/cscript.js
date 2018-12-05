@@ -3,14 +3,16 @@ var handM = document.getElementById("zm");
 var handS = document.getElementById("zs");
 var pfix = "translateX(-50%)"
 var mainClock = document.getElementById("cbody");
+var numCount=5;
 
-function genLine(_class,_rot,_num){
+function genLine(_class,_rot){
 var newLine= document.createElement("div");
 newLine.classList.add("nline",_class)
 newLine.style.transform = pfix+" rotate("+ setRot(60,0,_rot) +"deg)";
-if(_num){
+if(_class!=="mini"){
 var numero=document.createElement("p");
-numero.textContent= _rot/5;
+numero.textContent= _rot/numCount;
+numero.style.transform = pfix+" rotate("+ setRot(60,0,_rot)*-1 +"deg)";
 newLine.appendChild(numero)
 }
 mainClock.appendChild(newLine)
@@ -18,10 +20,14 @@ mainClock.appendChild(newLine)
 
 for(var i=1; i<61; ++i)
 {
-
-    genLine("nline",i)
-
-
+    if(i%numCount == 0){
+        if(i%(numCount*3) == 0)
+            {genLine("quarter",i)}
+        else
+            {genLine("medium",i)}
+    }
+    else
+    {genLine("mini",i)}
 }
 
 

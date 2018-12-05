@@ -13,13 +13,34 @@
 .nline{
     position: absolute;
     height: 100%;
-    width: 3px;
-    border-radius: 0;
     top: 0%;
     left: 50%;
-    transform: translateX(-50%) rotate(20deg);
-    box-shadow: 0px 15px 0px rgba(0,0,0,0.4) inset;
     z-index: -1;
+}
+
+.nline.mini{
+    width: 3px;
+    box-shadow: 0px 15px 0px rgba(0,0,0,0.4) inset;
+}
+
+.nline.medium{
+width:5px;
+box-shadow: 0px 18px 0px rgba(0,0,0,0.6) inset;
+}
+
+.nline.quarter{
+    width:8px;
+    box-shadow: 0px 22px 0px rgba(0,0,0,0.8) inset;
+}
+
+.nline p {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    font-family: Calibri;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #zh{
