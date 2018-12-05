@@ -10,6 +10,18 @@
     border-style: solid;
 }
 
+.nline{
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    border-radius: 0;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) rotate(20deg);
+    box-shadow: 0px 15px 0px rgba(0,0,0,0.4) inset;
+    z-index: -1;
+}
+
 #zh{
     height:30%;
     border-color: #00f;
@@ -28,6 +40,7 @@
 }
 
 #cbody{
+    z-index: -2;
     top:40%;
     left:50%;
     transform: translate(-50%,-40%);
