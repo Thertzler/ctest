@@ -10,14 +10,19 @@
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-#zh{height:30%;
+#zh{
+    height:30%;
     background: #077;
     width:10px; 
 }
-#zm{height:45%;
+
+#zm{
+    height:45%;
     background: #710;    
 }
-#zs{height:40%;
+
+#zs{
+    height:40%;
     width:2px;
 }
 
