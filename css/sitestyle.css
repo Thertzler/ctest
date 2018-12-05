@@ -1,12 +1,11 @@
 .zeig{
     position:absolute;
     transform-origin: 50% 0; 
-    width: 5px;
     border-radius: 4px;
-    background:black;
+    background:#333;
     top: 50%;
     left: 50%;
-    transform: rotate(180deg);
+    transform: translateX(-50%), rotate(180deg), ;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -18,12 +17,13 @@
 
 #zm{
     height:45%;
-    background: #710;    
+    background: #710;
+    width: 7px;
 }
 
 #zs{
     height:40%;
-    width:2px;
+    width:3px;
 }
 
 #cbody{
@@ -35,5 +35,17 @@
     height:500px;
     border-radius: 50%;
     background: rgb(150,150,180);
+    box-shadow: 2px 3px 5px black;
+}
+
+#center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: radial-gradient(#fff 0%, #000 100%);
     box-shadow: 2px 3px 5px black;
 }
