@@ -16,7 +16,7 @@ handS.style.transform="rotate("+ valS+"deg)";
 handM.style.transform="rotate("+ valM+"deg)";
 handH.style.transform="rotate("+ valH+"deg)";
 
-console.log(valS/360)
+console.log(valH)
 }
 
 setInterval(clockUpdate,1000)
