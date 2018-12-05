@@ -25,7 +25,7 @@ newLine.classList.add("nline",_class)
 newLine.style.transform = pfix+" rotate("+ setRot(60,0,_rot) +"deg)";
 if(_class!=="mini"){
 var numero=document.createElement("p");
-numero.textContent= _rot/(5/numDiv);
+numero.textContent= (_rot/(5/numDiv)) < 24?_rot/(5/numDiv) : 0;
 numero.style.transform = pfix+" rotate("+ setRot(60,0,_rot)*-1 +"deg)";
 newLine.appendChild(numero)
 }
@@ -51,7 +51,6 @@ function delFace(){
     lineList[i-1].parentNode.removeChild(lineList[i-1])
     }
     }
-
 
 function setRot(_fraction, _modus, _manum){
     if(_fraction === 0){return 0}
